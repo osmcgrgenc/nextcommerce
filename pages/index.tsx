@@ -7,6 +7,7 @@ import HowItWorks from '@store/containers/how-it-works';
 import Layout from '@store/containers/layout/layout';
 import ProductTopSells from '@store/containers/product/ProductTopSells';
 import Products from '@store/containers/products';
+import HomePage from '@components/layouts/homepage';
 import { useSearch } from '@store/contexts/search/use-search';
 import { useRefScroll } from '@store/helpers/use-ref-scroll';
 import {
@@ -19,6 +20,10 @@ import isEmpty from 'lodash/isEmpty';
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 import { useEffect } from 'react';
+import Benefits from "@store/containers/layout/footer/benefits";
+import FooterNewsletter from "@store/containers/layout/footer/footer-newsletter";
+import FooterLinks from "@store/containers/layout/footer/footer-links";
+import Copyright from "@store/containers/layout/footer/copyright";
 
 interface props {
   categories: Category[];
@@ -58,7 +63,7 @@ export default function Home({
   }, [settings]);
 
   return (
-    <Layout categories={categories}>
+    <Layout categories={categories}   footerContent={[<Benefits />, <FooterNewsletter />,<FooterLinks />, <Copyright />]} >
       <DefaultSeo settings={settings} />
       <Head>
         <meta
@@ -68,13 +73,8 @@ export default function Home({
         <meta name="keywords" content={metaTags}></meta>
         <NextSeo title='GALATASARAY' />
       </Head>
-      <HeroBlock heroBanners={banners} />
-      <HowItWorks />
-      <div className="w-full max-w-[1430px] px-3 mx-auto">
-        <ProductTopSells items={products} />
-        <CategorySlider categories={categories} label="Shop by category" />
-        <Products items={products} ref={elRef} />
-      </div>
+      <HomePage />
+
     </Layout>
   );
 }

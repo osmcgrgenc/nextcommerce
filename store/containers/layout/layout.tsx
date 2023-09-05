@@ -1,39 +1,42 @@
-import { useAppDispatch, useAppSelector } from '@hooks/use-store';
-import { useStorage } from '@hooks/useStorage';
-import { rehydrate } from '@redux/card';
-import { Product } from '@ts-types/generated';
+import {useAppDispatch, useAppSelector} from '@hooks/use-store';
+import {useStorage} from '@hooks/useStorage';
+import {rehydrate} from '@redux/card';
+import {Product} from '@ts-types/generated';
+import NewsletterPopup from "@store/components/newsletter-popup";
+import SignInModal from "@store/components/sign-in-modal";
+import Footer from "@store/containers/layout/footer/footer";
+import Header from "@store/containers/layout/header/header";
+import MobileMenu from "@store/containers/layout/menu/mobile-menu";
 
-import { CartDrawer, Drawer } from '../drawer/drawer';
-import Footer from './footer';
-import Header from './header';
 
-const Layout = (props) => {
-  const items = useAppSelector((state) => state.cart.items);
-  const dispatch = useAppDispatch();
+function Layout ({children,footerContent}: any) {
+    const items = useAppSelector((state) => state.cart.items);
+    const dispatch = useAppDispatch();
 
-  const rehydrateLocalState = (items: Product[]) => {
-    dispatch(rehydrate(items));
-  };
+    const rehydrateLocalState = (items: Product[]) => {
+        dispatch(rehydrate(items));
+    };
 
-  // This component is global on all pages we are using it to get the items in local storage
-  useStorage(items, rehydrateLocalState);
-  return (
-    <main
-      className="relative min-h-screen h-screen flex-grow overflow-y-auto"
-      style={{
-        minHeight: '-webkit-fill-available',
-        WebkitOverflowScrolling: 'touch',
-        ...props.style
-      }}
-    >
-      <Drawer categories={props.categories} />
-      <Header categories={props.categories} />
-      <div className="flex flex-col w-full h-full flex-grow">
-        <div className="pt-60px flex-auto">{props.children}</div>
-        <Footer />
-      </div>
-      <CartDrawer />
-    </main>
-  );
-};
+    // This component is global on all pages we are using it to get the items in local storage
+    useStorage(items, rehydrateLocalState);
+    return (
+        <>
+            <div className="page-wrapper">
+                <Header />
+
+                {children}
+
+                <Footer footerContent={footerContent} />
+            </div>
+            <button className="scroll-top"><i className="icon-arrow-up"></i></button>
+            <div className="mobile-menu-overlay"></div>
+
+            <MobileMenu />
+
+            {/*<SignInModal />*/}
+
+            {/*<NewsletterPopup />*/}
+        </>
+        )
+}
 export default Layout;

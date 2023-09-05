@@ -196,4 +196,6 @@
 }
 
 @import './custom-plugins.css';
+@import './global.css';
+
 @import './custom-classes.css';

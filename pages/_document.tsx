@@ -26,7 +26,7 @@ export default class CustomDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body dir={dir}>
+        <body dir={dir} className="font-normal text-gray-600 bg-white antialiased overflow-x-hidden">
           <Main />
           <NextScript />
         </body>
