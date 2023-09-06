@@ -8,7 +8,7 @@ function FooterLinks(props) {
                     <div className="row">
                         <div className="col-sm-12 col-lg-6">
                             <div className="widget widget-about">
-                                <img src="assets/images/demos/demo-2/logo.png" className="footer-logo"
+                                <img src="/assets/images/demos/demo-2/logo.png" className="footer-logo"
                                      alt="Footer Logo" width="105" height="25"/>
                                 <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu
                                     vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi,
@@ -25,7 +25,7 @@ function FooterLinks(props) {
                                         <div className="col-sm-6 col-md-8">
                                             <span className="widget-about-title">Payment Method</span>
                                             <figure className="footer-payments">
-                                                <img src="assets/images/payments.png" alt="Payment methods"
+                                                <img src="/assets/images/payments.png" alt="Payment methods"
                                                      width="272" height="20"/>
                                             </figure>
                                         </div>

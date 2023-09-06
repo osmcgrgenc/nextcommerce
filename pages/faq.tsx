@@ -1,5 +1,5 @@
 import Accordion from '@store/components/accordion';
-import Layout from '@store/containers/layout/layout';
+import Layout from '@components/layouts/layout';
 import Head from 'next/head';
 
 const accordionData = [

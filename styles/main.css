@@ -197,5 +197,9 @@
 
 @import './custom-plugins.css';
 @import './global.css';
+@import './icon-fonts.css';
+@import './pages.css';
+@import './general-style.css';
+@import './spacing-helpers.css';
 
 @import './custom-classes.css';

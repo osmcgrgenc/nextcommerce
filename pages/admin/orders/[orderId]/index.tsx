@@ -1,6 +1,6 @@
 import Card from '@components/common/card';
 import ImageComponent from '@components/ImageComponent';
-import AppLayout from '@components/layouts/app';
+import AppLayout from '@store/containers/layout/app';
 import Button from '@components/ui/button';
 import ErrorMessage from '@components/ui/error-message';
 import Loader from '@components/ui/loader/loader';

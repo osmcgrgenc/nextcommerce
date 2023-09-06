@@ -1,7 +1,7 @@
 import { useSettings } from '@contexts/settings.context';
 import { useErrorLogger } from '@hooks/useErrorLogger';
 import CategoryHeader from '@store/components/CategoryHeader';
-import Layout from '@store/containers/layout/layout';
+import Layout from '@components/layouts/layout';
 import Products from '@store/containers/products';
 import { useRefScroll } from '@store/helpers/use-ref-scroll';
 import {

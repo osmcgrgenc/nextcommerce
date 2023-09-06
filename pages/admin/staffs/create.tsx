@@ -1,4 +1,4 @@
-import AppLayout from '@components/layouts/app';
+import AppLayout from '@store/containers/layout/app';
 import StaffCreateUpdateForm from '@components/staff/staff-form';
 import { useGetStaff } from '@hooks/index';
 import { verifyAuth, XSRFHandler } from '@middleware/utils';

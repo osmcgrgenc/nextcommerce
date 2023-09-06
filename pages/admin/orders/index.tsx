@@ -1,5 +1,5 @@
 import Card from '@components/common/card';
-import AppLayout from '@components/layouts/app';
+import AppLayout from '@store/containers/layout/app';
 import OrderList from '@components/order/order-list';
 import ErrorMessage from '@components/ui/error-message';
 import Loader from '@components/ui/loader/loader';

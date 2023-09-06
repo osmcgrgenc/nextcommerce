@@ -1,7 +1,7 @@
 import Card from '@components/common/card';
 import SortForm from '@components/common/sort-form';
 import { Add } from '@components/icons/add';
-import AppLayout from '@components/layouts/app';
+import AppLayout from '@store/containers/layout/app';
 import StaffList from '@components/staff/staff-list';
 import ErrorMessage from '@components/ui/error-message';
 import LinkButton from '@components/ui/link-button';

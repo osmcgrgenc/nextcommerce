@@ -2,10 +2,10 @@ import {useAppDispatch, useAppSelector} from '@hooks/use-store';
 import {useStorage} from '@hooks/useStorage';
 import {rehydrate} from '@redux/card';
 import {Product} from '@ts-types/generated';
-import NewsletterPopup from "@store/components/newsletter-popup";
-import SignInModal from "@store/components/sign-in-modal";
-import Footer from "@store/containers/layout/footer/footer";
-import Header from "@store/containers/layout/header/header";
+import NewsletterPopup from "@components/popup/newsletter-popup";
+import SignInModal from "@components/modal/sign-in-modal";
+import Footer from "@components/layouts/footer/footer";
+import Header from "@components/layouts/header/header";
 import MobileMenu from "@store/containers/layout/menu/mobile-menu";
 
 
@@ -17,7 +17,6 @@ function Layout ({children,footerContent}: any) {
         dispatch(rehydrate(items));
     };
 
-    // This component is global on all pages we are using it to get the items in local storage
     useStorage(items, rehydrateLocalState);
     return (
         <>

@@ -1,6 +1,6 @@
 import { useSettings } from '@contexts/settings.context';
 import Breadcrumb from '@store/components/breadcrumb';
-import Layout from '@store/containers/layout/layout';
+import Layout from '@components/layouts/layout';
 import ProductDetails from '@store/containers/product/product-details';
 import { Category, Product, Settings } from '@ts-types/generated';
 import isEmpty from 'lodash/isEmpty';

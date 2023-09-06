@@ -1,5 +1,5 @@
 import CreateOrUpdateSlideForm from '@components/hero-carousel/hero-slide-form';
-import AppLayout from '@components/layouts/app';
+import AppLayout from '@store/containers/layout/app';
 import { useGetStaff } from '@hooks/index';
 import { verifyAuth, XSRFHandler } from '@middleware/utils';
 import { SSRProps } from '@ts-types/custom.types';

@@ -1,4 +1,4 @@
-import Layout from '@store/containers/layout/layout';
+import Layout from '@components/layouts/layout';
 import TermsPageContent from '@store/containers/term/terms';
 import Head from 'next/head';
 

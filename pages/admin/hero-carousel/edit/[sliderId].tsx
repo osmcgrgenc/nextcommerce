@@ -1,5 +1,5 @@
 import CreateOrUpdateSlideForm from '@components/hero-carousel/hero-slide-form';
-import AppLayout from '@components/layouts/app';
+import AppLayout from '@store/containers/layout/app';
 import ErrorMessage from '@components/ui/error-message';
 import Loader from '@components/ui/loader/loader';
 import { useErrorLogger, useGetStaff } from '@hooks/index';

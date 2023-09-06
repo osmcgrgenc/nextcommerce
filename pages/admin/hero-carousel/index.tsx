@@ -1,7 +1,7 @@
 import Card from '@components/common/card';
 import HeroCarouselList from '@components/hero-carousel/hero-carousel-list';
 import { Add } from '@components/icons/add';
-import AppLayout from '@components/layouts/app';
+import AppLayout from '@store/containers/layout/app';
 import ErrorMessage from '@components/ui/error-message';
 import LinkButton from '@components/ui/link-button';
 import Loader from '@components/ui/loader/loader';

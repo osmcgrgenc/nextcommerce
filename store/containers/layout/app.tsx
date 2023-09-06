@@ -2,8 +2,8 @@ import { useSettings } from '@contexts/settings.context';
 import { DefaultSeo as NextDefaultSeo } from 'next-seo';
 import React from 'react';
 
-import { Navbar, Sidebar, SidebarMini } from '../navigation/index';
-import MobileNavigation from '../navigation/mobile-navigation';
+import { Navbar, Sidebar, SidebarMini } from '@components/navigation';
+import MobileNavigation from '@components/navigation/mobile-navigation';
 
 const AppLayout: React.FC = ({ children }) => {
   const { storeName, favicon } = useSettings();

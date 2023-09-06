@@ -1,5 +1,5 @@
 import CreateOrUpdateAttributeForm from '@components/attribute/attribute-form';
-import AppLayout from '@components/layouts/app';
+import AppLayout from '@store/containers/layout/app';
 import ErrorMessage from '@components/ui/error-message';
 import Loader from '@components/ui/loader/loader';
 import { useErrorLogger } from '@hooks/useErrorLogger';

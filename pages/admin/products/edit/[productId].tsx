@@ -1,4 +1,4 @@
-import AppLayout from '@components/layouts/app';
+import AppLayout from '@store/containers/layout/app';
 import CreateOrUpdateProductForm from '@components/product/product-form';
 import ErrorMessage from '@components/ui/error-message';
 import Loader from '@components/ui/loader/loader';

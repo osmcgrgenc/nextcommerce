@@ -57,26 +57,7 @@ function App({Component, pageProps}: AppProps) {
                     href="/favicons/apple-touch-icon.png"
                 />
                 <link rel="manifest" href="/manifest.json"/>
-                <link rel="stylesheet" href="/assets/vendor/line-awesome/line-awesome.min.css" />
 
-                <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-                <link rel="stylesheet" href="/assets/css/plugins/owl-carousel/owl.carousel.css"/>
-                <link rel="stylesheet" href="/assets/css/plugins/magnific-popup/magnific-popup.css"/>
-                <link rel="stylesheet" href="/assets/css/plugins/jquery.countdown.css"/>
-                <link rel="stylesheet" href="/assets/css/skins/skin-demo-2.css"/>
-                <link rel="stylesheet" href="/assets/css/demos/demo-2.css"/>
-                <script src="/assets/js/jquery.min.js"></script>
-                <script src="/assets/js/bootstrap.bundle.min.js"></script>
-                <script src="/assets/js/jquery.hoverIntent.min.js"></script>
-                <script src="/assets/js/jquery.waypoints.min.js"></script>
-                <script src="/assets/js/superfish.min.js"></script>
-                <script src="/assets/js/owl.carousel.min.js"></script>
-                <script src="/assets/js/jquery.plugin.min.js"></script>
-                <script src="/assets/js/jquery.magnific-popup.min.js"></script>
-                <script src="/assets/js/jquery.countdown.min.js"></script>
-                <script src="/assets/js/main.js"></script>
-                <script src="/assets/js/demos/demo-2.js"></script>
-                <script src="/assets/js/script.js"></script>
 
 
             </Head>

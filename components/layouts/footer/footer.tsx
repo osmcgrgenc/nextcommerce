@@ -6,10 +6,10 @@ import {
     Twitter,
     Youtube
 } from '@store/assets/icons/social-icons';
-import Benefits from "@store/containers/layout/footer/benefits";
-import FooterNewsletter from "@store/containers/layout/footer/footer-newsletter";
-import Copyright from "@store/containers/layout/footer/copyright";
-import FooterLinks from "@store/containers/layout/footer/footer-links";
+import Benefits from "@components/layouts/footer/benefits";
+import FooterNewsletter from "@components/layouts/footer/footer-newsletter";
+import Copyright from "@components/layouts/footer/copyright";
+import FooterLinks from "@components/layouts/footer/footer-links";
 
 const social = [
     {

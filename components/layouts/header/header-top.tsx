@@ -1,24 +1,23 @@
 import React from 'react';
-import styles from  './header.module.css';
+import styles from '@store/containers/layout/header/header.module.css';
 function    HeaderTop() {
     return (
-        <div className={styles['header-top']}>
-            <div className={styles.container}>
-                <div className={styles['header-left']}>
-                    <p>Special collection already available.</p>
-                    <a href="#">&nbsp;Read more ...</a>
+        <div className="header-top">
+            <div className="container">
+                <div className="header-left">
+                    <p>Special collection already available.</p><a href="#">&nbsp;Read more ...</a>
                 </div>
 
-                <div className={styles['header-right']}>
+                <div className="header-right">
 
-                    <ul className={styles['top-menu']}>
+                    <ul className="top-menu">
                         <li>
                             <a href="#">Links</a>
                             <ul>
                                 <li>
-                                    <div className={styles['header-dropdown']}>
+                                    <div className="header-dropdown">
                                         <a href="#">USD</a>
-                                        <div className={styles['header-menu']}>
+                                        <div className="header-menu">
                                             <ul>
                                                 <li><a href="#">Eur</a></li>
                                                 <li><a href="#">Usd</a></li>
@@ -27,9 +26,9 @@ function    HeaderTop() {
                                     </div>
                                 </li>
                                 <li>
-                                    <div className={styles['header-dropdown']}>
+                                    <div className="header-dropdown">
                                         <a href="#">English</a>
-                                        <div className={styles['header-menu']}>
+                                        <div className="header-menu">
                                             <ul>
                                                 <li><a href="#">English</a></li>
                                                 <li><a href="#">French</a></li>
